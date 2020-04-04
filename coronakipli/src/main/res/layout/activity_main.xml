@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/corona"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true" />
+        <TextView
+           android:layout_gravity="center"
+            android:text="@string/waspada"
+            style="@style/text_header"
+            android:textSize="50sp"
+            />
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/btn_tips"
+        android:text="@string/tips"
+        style="@style/button_primary"/>
+
+    <Button
+        android:id="@+id/btn_news_update"
+        android:text="@string/update_berita"
+        style="@style/button_primary"
+        />
+    <Button
+        android:id="@+id/btn_dial_ambulance"
+        android:text="@string/telpon_darurat"
+        style="@style/button_primary"
+        android:layout_marginBottom="125dp"
+        />
+
+</LinearLayout>

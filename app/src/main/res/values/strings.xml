@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">latintent</string>
-    <string name="move_with_data">pindah dengan data</string>
-    <string name="sms_activity">kirim pesan darurat ke ortu</string>
-    <string name="dial_polisi">telepon polisi</string>
-    <string name="dial_ayah">telepon ayah</string>
-    <string name="dial_ibu">telepon ibu</string>
-    <string name="this_is_moveactivity">ini move activity</string>
-</resources>
