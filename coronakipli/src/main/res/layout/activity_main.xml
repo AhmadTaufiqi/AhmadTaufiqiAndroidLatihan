@@ -6,13 +6,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:gravity="center"
+    android:gravity="top"
     tools:context=".MainActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
+        android:layout_marginTop="30dp"
         >
 
         <ImageView
@@ -33,7 +34,8 @@
     <Button
         android:id="@+id/btn_tips"
         android:text="@string/tips"
-        style="@style/button_primary"/>
+        style="@style/button_primary"
+        />
 
     <Button
         android:id="@+id/btn_news_update"
@@ -44,7 +46,6 @@
         android:id="@+id/btn_dial_ambulance"
         android:text="@string/telpon_darurat"
         style="@style/button_primary"
-        android:layout_marginBottom="125dp"
         />
 
 </LinearLayout>

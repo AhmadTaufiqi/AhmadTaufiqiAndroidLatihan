@@ -38,7 +38,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.btn_news_update:
-
+                Uri webpage = Uri.parse("https://nasional.kompas.com/read/2020/04/05/15562001/update-total-kasus-covid-19-di-indonesia-ada-2273-bertambah-181");
+                Intent webIntent = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(webIntent);
                 break;
 
             case R.id.btn_dial_ambulance:
