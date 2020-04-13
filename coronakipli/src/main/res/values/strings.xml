@@ -1,13 +1,20 @@
 <resources>
-    <string name="app_name">latintent</string>
+    <string name="app_name">corolek</string>
     <string name="move_with_data">pindah dengan data</string>
     <string name="this_is_moveactivity">ini move activity</string>
     <string name="waspada">WASPADA</string>
     <string name="todo">TODO</string>
+
     <string name="tips">TIPS</string>
-    <string name="update_berita">UPDATE BERITA</string>
-    <string name="telpon_darurat">TELPON DARURAT AMBULANCE</string>
+    <string name="update_berita">BERITA</string>
+    <string name="telpon_darurat">AMBULANCE</string>
+    <string name="dokter_gugur">DOKTER</string>
+
     <string name="tips_untuk_pencegahan">TIPS UNTUK PENCEGAHAN</string>
     <string name="titlecontent1">1. Mencuci tangan dengan benar</string>
     <string name="content1">Mencuci tangan dengan benar adalah cara paling sederhana namun efektif untuk mencegah penyebaran virus 2019-nCoV. Cucilah tangan dengan air mengalir dan sabun, setidaknya selama 20 detik. Pastikan seluruh bagian tangan tercuci hingga bersih, termasuk punggung tangan, pergelangan tangan, sela-sela jari, dan kuku. Setelah itu, keringkan tangan menggunakan tisu, handuk bersih, atau mesin pengering tangan. </string>
+    <string name="nama_dokter">Nama Dokter</string>
+    <string name="detail">Detail</string>
+    <string name="detailed_view">detailed view</string>
+    <string name="simple_view">simple view</string>
 </resources>

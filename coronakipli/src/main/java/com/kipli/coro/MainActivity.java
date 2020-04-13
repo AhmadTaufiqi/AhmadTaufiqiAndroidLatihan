@@ -1,12 +1,12 @@
-package com.kipli.latintent;
+package com.kipli.coro;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -15,15 +15,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        Button btnTips = findViewById(R.id.btn_tips);
+        CardView btnTips = findViewById(R.id.btn_tips);
         btnTips.setOnClickListener(this);
 
-        Button btnNewsUpdate = findViewById(R.id.btn_news_update);
+        CardView btnNewsUpdate = findViewById(R.id.btn_news_update);
         btnNewsUpdate.setOnClickListener(this);
 
-        Button btnDialAyah = findViewById(R.id.btn_dial_ambulance);
-        btnDialAyah.setOnClickListener(this);
+        CardView btnDialAmbul = findViewById(R.id.btn_dial_ambulance);
+        btnDialAmbul.setOnClickListener(this);
+
+        CardView btnDokter = findViewById(R.id.hospital_list);
+        btnDokter.setOnClickListener(this);
 
     }
 
@@ -48,7 +50,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent dialAmbulanceIntent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:"+NomorAmbulance));
                 startActivity(dialAmbulanceIntent);
                 break;
-
+            case R.id.hospital_list:
+                Intent dokterIntent= new Intent(MainActivity.this, HospitalActivity.class);
+                startActivity(dokterIntent);
         }
     }
 }

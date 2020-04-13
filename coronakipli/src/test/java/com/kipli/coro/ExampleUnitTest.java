@@ -1,4 +1,4 @@
-package com.kipli.latintent;
+package com.kipli.coro;
 
 import org.junit.Test;
 

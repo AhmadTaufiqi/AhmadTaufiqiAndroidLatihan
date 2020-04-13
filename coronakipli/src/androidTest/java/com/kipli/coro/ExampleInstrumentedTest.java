@@ -1,4 +1,4 @@
-package com.kipli.latintent;
+package com.kipli.coro;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.kipli.latintent", appContext.getPackageName());
+        assertEquals("com.kipli.coro", appContext.getPackageName());
     }
 }
