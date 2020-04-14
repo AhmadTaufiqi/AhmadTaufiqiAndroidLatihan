@@ -1,4 +1,4 @@
-package com.kipli.coro;
+package models;
 
 public class Hospital {
     private String name;

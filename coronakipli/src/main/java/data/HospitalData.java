@@ -1,6 +1,10 @@
-package com.kipli.coro;
+package data;
+
+import com.kipli.coro.R;
 
 import java.util.ArrayList;
+
+import models.Hospital;
 
 public class HospitalData {
     private static String[] HospitalNames ={
@@ -52,7 +56,7 @@ public class HospitalData {
 
     };
 
-    static ArrayList<Hospital> getListData(){
+    public static ArrayList<Hospital> getListData(){
         ArrayList<Hospital> list = new ArrayList<>();
         for (int position = 0; position < HospitalNames.length; position++){
             Hospital hospital = new Hospital();

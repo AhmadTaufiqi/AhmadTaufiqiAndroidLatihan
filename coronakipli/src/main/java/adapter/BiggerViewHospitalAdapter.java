@@ -1,4 +1,4 @@
-package com.kipli.coro;
+package adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
+import models.Hospital;
+import com.kipli.coro.R;
 
 import java.util.ArrayList;
 

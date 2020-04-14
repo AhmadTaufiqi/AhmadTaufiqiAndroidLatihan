@@ -10,6 +10,11 @@ import android.view.MenuItem;
 
 import java.util.ArrayList;
 
+import adapter.BiggerViewHospitalAdapter;
+import adapter.ListHospitalAdapter;
+import data.HospitalData;
+import models.Hospital;
+
 public class HospitalActivity extends AppCompatActivity {
 private RecyclerView rvDokter;
 private ArrayList<Hospital> list = new ArrayList<>();
@@ -25,14 +30,14 @@ private ArrayList<Hospital> list = new ArrayList<>();
     }
     private void showRecyclerList(){
         rvDokter.setLayoutManager(new LinearLayoutManager(this));
-        ListHospitalAdapter listDokterAdapter = new ListHospitalAdapter(list);
-        rvDokter.setAdapter(listDokterAdapter);
+        ListHospitalAdapter listHospitalAdapter = new ListHospitalAdapter(list);
+        rvDokter.setAdapter(listHospitalAdapter);
     }
 
     private void showRecyclerBiggerView(){
         rvDokter.setLayoutManager(new LinearLayoutManager(this));
-        BiggerViewHospitalAdapter biggerViewDokterAdapter = new BiggerViewHospitalAdapter(list);
-        rvDokter.setAdapter(biggerViewDokterAdapter);
+        BiggerViewHospitalAdapter biggerViewHospitalAdapter = new BiggerViewHospitalAdapter(list);
+        rvDokter.setAdapter(biggerViewHospitalAdapter);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
@@ -48,6 +53,7 @@ private ArrayList<Hospital> list = new ArrayList<>();
     public void setMode(int selectedMode){
         switch (selectedMode){
             case R.id.simple_view:
+                showRecyclerList();
                 break;
 
             case R.id.detailed_view:
